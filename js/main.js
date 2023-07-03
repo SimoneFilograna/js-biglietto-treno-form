@@ -1,7 +1,4 @@
-// const firstName = prompt ("Inserisci qui il tuo nome")
-// const lastName = prompt ("inserisci qui il tuo cognome")
-// const kmRoute = parseInt( prompt ("Quanti km devi percorrere?"));
-// const age = parseInt( prompt ("Quanti anni hai?"));
+
 const fullName = document.getElementById("fullname");
 const kmRoute = document.getElementById("km-route");
 const age = document.getElementById("age-number");
@@ -11,28 +8,33 @@ console.log(fullName.value);
 console.log(kmRoute.value);
 console.log(age.value);
 
-//price in decimal conversion
-const price = (parseInt(kmRoute.value) * 0.21);
-const priceResult = price.toFixed(2);
 
-//test calcolo con nuove variabili
-console.log(price)
+btnCalc.addEventListener("click", function(){
+    const ageCheck = age.value
+    const kmLong = kmRoute.value
 
-// offerta minori
-const minOffer = (price - (price * 0.20));
-const minResult = minOffer.toFixed(2);
+    //price in decimal conversion
+    const price = (kmLong * 0.21);
+    const priceResult = price.toFixed(2);
 
-console.log(minResult);
+    // offerta minori
+    const minOffer = (price - (price * 0.20));
+    const minResult = minOffer.toFixed(2);
 
-// //min decimal
-// console.log("prezzo scontato 2 decimali");
-// console.log(minResult);
+    //offerta pensionati
+    const maxOffer = (price - (price * 0.40));
+    const maxResult = maxOffer.toFixed(2);
 
-//offerta pensionati
-const maxOffer = (price - (price * 0.40));
-const maxResult = maxOffer.toFixed(2);
 
-console.log(maxResult);
+    if (ageCheck < 18) {
+        console.log(minResult)
+    } else if (ageCheck >= 65) {
+        console.log(maxResult)
+    } else {
+        console.log(priceResult)
+    }
+    
+})
 
 
 
