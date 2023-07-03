@@ -14,6 +14,7 @@ btnCalc.addEventListener("click", function(){
     const nameTotal = fullName.value;
     const ageCheck = age.value;
     const kmLong = kmRoute.value;
+    const ticketContainer = document.querySelector(".content-container");
 
     //price in decimal conversion
     const price = (kmLong * 0.21);
@@ -27,6 +28,7 @@ btnCalc.addEventListener("click", function(){
     const maxOffer = (price - (price * 0.40));
     const maxResult = maxOffer.toFixed(2);
 
+    ticketContainer.classList.remove("d-none");
 
     document.getElementById("ticket-name").innerHTML = nameTotal;
 
@@ -45,6 +47,7 @@ btnCalc.addEventListener("click", function(){
     document.getElementById("cab").innerHTML =  Math.floor((Math.random() * 10) + 1);
 
     document.getElementById("serial-number").innerHTML = (Math.random() * 100000).toFixed(0);
+
 
     
 })
