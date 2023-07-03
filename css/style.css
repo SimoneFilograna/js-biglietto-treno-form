@@ -1,0 +1,12 @@
+.top-page{
+    height: 200px;
+    background-image: url(../img/header-img.avif);
+    background-size: cover;
+    background-position: bottom;
+    opacity: .8;
+}
+
+body{
+    background-image: url(../img/pattern-png-30800.png);
+    background-color: rgb(255, 245, 210);
+}
