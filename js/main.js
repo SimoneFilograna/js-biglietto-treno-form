@@ -11,6 +11,7 @@ console.log(age.value);
 
 
 btnCalc.addEventListener("click", function(){
+    const nameTotal = fullName.value;
     const ageCheck = age.value;
     const kmLong = kmRoute.value;
 
@@ -27,6 +28,8 @@ btnCalc.addEventListener("click", function(){
     const maxResult = maxOffer.toFixed(2);
 
 
+    document.getElementById("ticket-name").innerHTML = nameTotal;
+
     if (ageCheck < 18) {
         document.getElementById("ticket-price").innerHTML = (minResult);
         document.getElementById("offer").innerHTML = "20%";
@@ -39,6 +42,7 @@ btnCalc.addEventListener("click", function(){
         document.getElementById("offer").innerHTML = "Biglietto ordinario";
     }
 
+    document.getElementById("serial-number").innerHTML = (Math.random() * 100000).toFixed(0);
 
     
 })
