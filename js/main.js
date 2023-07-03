@@ -5,17 +5,25 @@
 const fullName = document.getElementById("fullname");
 const kmRoute = document.getElementById("km-route");
 const age = document.getElementById("age-number");
+const btnCalc = document.getElementById("btn-check");
 
 console.log(fullName.value);
-console.log(kmRoute.value)
+console.log(kmRoute.value);
+console.log(age.value);
+
 
 
 
 
 
 //price in decimal conversion
-const price = (kmRoute * 0.21);
+const price = (parseInt(kmRoute) * 0.21);
 const priceResult = price.toFixed(2);
+
+//test calcolo con nuove variabili
+
+console.log(price)
+
 
 
 
