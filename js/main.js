@@ -9,9 +9,10 @@ console.log(kmRoute.value);
 console.log(age.value);
 
 
+
 btnCalc.addEventListener("click", function(){
-    const ageCheck = age.value
-    const kmLong = kmRoute.value
+    const ageCheck = age.value;
+    const kmLong = kmRoute.value;
 
     //price in decimal conversion
     const price = (kmLong * 0.21);
@@ -27,12 +28,18 @@ btnCalc.addEventListener("click", function(){
 
 
     if (ageCheck < 18) {
-        console.log(minResult)
+        document.getElementById("ticket-price").innerHTML = (minResult);
+        document.getElementById("offer").innerHTML = "20%";
     } else if (ageCheck >= 65) {
-        console.log(maxResult)
+        document.getElementById("ticket-price").innerHTML = (maxResult);
+        document.getElementById("offer").innerHTML = "40%";
+
     } else {
-        console.log(priceResult)
+        document.getElementById("ticket-price").innerHTML = (priceResult);
+        document.getElementById("offer").innerHTML = "Biglietto ordinario";
     }
+
+
     
 })
 
