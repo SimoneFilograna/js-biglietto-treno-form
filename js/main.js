@@ -42,6 +42,8 @@ btnCalc.addEventListener("click", function(){
         document.getElementById("offer").innerHTML = "Biglietto ordinario";
     }
 
+    document.getElementById("cab").innerHTML =  Math.floor((Math.random() * 10) + 1);
+
     document.getElementById("serial-number").innerHTML = (Math.random() * 100000).toFixed(0);
 
     
