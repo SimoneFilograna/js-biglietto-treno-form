@@ -3,6 +3,7 @@ const fullName = document.getElementById("fullname");
 const kmRoute = document.getElementById("km-route");
 const age = document.getElementById("age-number");
 const btnCalc = document.getElementById("btn-check");
+const btnDel = document.getElementById("btn-back");
 
 console.log(fullName.value);
 console.log(kmRoute.value);
@@ -49,6 +50,9 @@ btnCalc.addEventListener("click", function(){
     document.getElementById("serial-number").innerHTML = (Math.random() * 100000).toFixed(0);   
 })
 
+btnDel.addEventListener("Click", function(){    
+
+})
 
 
 
