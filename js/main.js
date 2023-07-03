@@ -11,49 +11,36 @@ console.log(fullName.value);
 console.log(kmRoute.value);
 console.log(age.value);
 
-
-
-
-
-
 //price in decimal conversion
-const price = (parseInt(kmRoute) * 0.21);
+const price = (parseInt(kmRoute.value) * 0.21);
 const priceResult = price.toFixed(2);
 
 //test calcolo con nuove variabili
-
 console.log(price)
-
-
-
 
 // offerta minori
 const minOffer = (price - (price * 0.20));
 const minResult = minOffer.toFixed(2);
 
+console.log(minResult);
+
 // //min decimal
 // console.log("prezzo scontato 2 decimali");
 // console.log(minResult);
-
 
 //offerta pensionati
 const maxOffer = (price - (price * 0.40));
 const maxResult = maxOffer.toFixed(2);
 
-
-// console.log(kmRoute, age);
-// console.log("prezzo");
-// console.log(price);
-// console.log("offerta minima");
-// console.log(minOffer);
-// console.log("offeta massima");
-// console.log(maxOffer);
+console.log(maxResult);
 
 
-// document.getElementById("Name").innerHTML = firstName;
-// document.getElementById("Surname").innerHTML = lastName;
-// document.getElementById("Age").innerHTML = age;
-// document.getElementById("road-km").innerHTML = kmRoute;
+
+
+
+
+
+
 
 //total price
 
@@ -63,15 +50,5 @@ const maxResult = maxOffer.toFixed(2);
 //     document.getElementById("ticket-price").innerHTML = (maxResult + "€");
 // }   else {
 //     document.getElementById("ticket-price").innerHTML = (priceResult + "€");
-// }
-
-//coupon
-
-// if (age < 18) {
-//     document.getElementById("coupon").innerHTML = ("20%");   
-// }   else if (age >= 65) {
-//     document.getElementById("coupon").innerHTML = ("40%");
-// }   else {
-//     document.getElementById("coupon").innerHTML = ("/");
 // }
 
