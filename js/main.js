@@ -46,10 +46,7 @@ btnCalc.addEventListener("click", function(){
 
     document.getElementById("cab").innerHTML =  Math.floor((Math.random() * 10) + 1);
 
-    document.getElementById("serial-number").innerHTML = (Math.random() * 100000).toFixed(0);
-
-
-    
+    document.getElementById("serial-number").innerHTML = (Math.random() * 100000).toFixed(0);   
 })
 
 
